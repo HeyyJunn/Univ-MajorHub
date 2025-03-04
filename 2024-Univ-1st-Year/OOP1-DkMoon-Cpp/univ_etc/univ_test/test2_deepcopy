@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class A {
+public:
+    A() : ptr { new char [100 * 1024 * 1024]} {}
+    A(const A &ref) : ptr { new char [100 * 1024 * 1024]} {
+        memcpy(ptr, ref.ptr, 100 * 1024 * 1024);
+    }
+private:
+    char* ptr;
+};
+int main (void) {
+
+    return 0;
+}

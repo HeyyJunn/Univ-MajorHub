@@ -1,0 +1,21 @@
+관례적으로 header 파일에 넣는 것들
+    #define 으로 된 메크로 상수/함수
+    변수/함수의 선언
+    inline 함수
+    class 정의 ( inline 이 아닌 method 정의는 제외 )
+    
+    클래스 정의는 헤더파일에, 구현은 cpp 파일
+
+cpp 파일에는 inline 이 아닌 메서드들의 정의(몸통,구현), static 멤버 변수 정의
+
+
+#include "A.h"
+멤버 변수/함수 이름 앞에는 클래스이름:: 형태로 붙인다
+:: 범위 지정연산자
+
+/c compile 의 약자
+/EHsc exception handler (예외)
+/o output mac에서는 -o -c . . .
+    -c /EHsc file1.cpp file2.cpp
+    -o myapp file.obj file2.obj
+
