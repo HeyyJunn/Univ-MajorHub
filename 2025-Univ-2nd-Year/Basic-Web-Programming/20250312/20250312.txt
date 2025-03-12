@@ -1,0 +1,9 @@
+query string
+  /ssearch/keywod=html ~
+
+
+open in live server
+  port number
+  http://127.0.0.1:5500/20250312/index.html
+open in deafault browser
+  file:///Users/viola_patrinii/Desktop/Univ-MajorHub/2025-Univ-2nd-Year/Basic-Web-Programming/20250312/index.html
