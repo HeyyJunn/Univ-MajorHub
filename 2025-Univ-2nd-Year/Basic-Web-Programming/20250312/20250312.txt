@@ -1,9 +1,38 @@
+2강, HTML-Blankfill
+
 query string
   /ssearch/keywod=html ~
-
 
 open in live server
   port number
   http://127.0.0.1:5500/20250312/index.html
 open in deafault browser
   file:///Users/viola_patrinii/Desktop/Univ-MajorHub/2025-Univ-2nd-Year/Basic-Web-Programming/20250312/index.html
+
+blockquote q 태그 사용빈도 낮음.
+
+<ins> 언더바
+<dns> 취소선
+<sub><sup> 위,아래 첨자
+
+&lt <
+&gt >
+&qout " 
+&apos '
+&amp &
+
+<div> 그룹짓기, 줄바꿈
+<span> 줄바꿈 없는 인라인 요소를 그룹짓는데 사용
+
+<ul> 
+  순서가 없는 목록을 생성
+  목록 내용을 구성할 때는 li 태그 사용
+
+<ol>
+  순서가 있는 목록을 생성
+  목록 내용을 구성할 때는 li 태그 사용
+
+<dt> description term tag 
+<dd> descriptiin details 태그
+
+<a href=" 대상경로", target=" 링크 연결 방식 " title=" 링크설명" </a>
