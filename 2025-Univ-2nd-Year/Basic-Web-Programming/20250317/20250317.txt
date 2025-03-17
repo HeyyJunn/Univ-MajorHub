@@ -1,0 +1,11 @@
+width 하나만 기재하면 비율에 따라 자동으로 규격조정
+
+alt
+  사진이 나오지 않을 때 나타나는 txt
+  이미지 대체용 설명
+title
+  마우스 올려뒀을 때 나오는 txt
+
+<a href="link" target="_blank>
+  <img src='' ~~ >
+</a>
