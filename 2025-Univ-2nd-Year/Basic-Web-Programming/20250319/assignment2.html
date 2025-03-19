@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>수업참여 결과</title>
+</head>
+<body>
+  <h2 style="color:blue;">오늘의 수업참여 결과</h2>
+
+  <form action="#">
+    <fieldset>
+      <legend>기본 정보</legend>
+      <p>
+        <label for="userid">아이디 (4~8 글자):</label>
+        <input type="text" id="userid" placeholder="아이디" minlength="4" maxlength="8" required>
+      </p>
+      <p>
+        <label for="passwd">비밀번호 (4글자 이상):</label>
+        <input type="password" id="passwd" placeholder="비밀번호" minlength="4" required>
+      </p>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>선택 정보</legend>
+      <p>
+        <label for="phone">전화번호:</label>
+        <input type="tel" id="phone" placeholder="전화번호">
+      </p>
+      <p>
+        <label for="email">이메일:</label>
+        <input type="email" id="email" placeholder="이메일">
+      </p>
+      <p>
+        <label for="url">URL:</label>
+        <input type="url" id="url" placeholder="URL">
+      </p>
+      <p>
+        <label for="search">Search:</label>
+        <input type="search" id="search" placeholder="검색">
+      </p>
+      <p>
+        <input type="submit" value="제출">
+      </p>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>주문할 상품을 선택하세요</legend>
+      <input type="checkbox" name="product" value="apple" id="apple">
+      <label for="apple">사과</label>
+
+      <input type="checkbox" name="product" value="pear" id="pear">
+      <label for="pear">배</label>
+
+      <input type="checkbox" name="product" value="peach" id="peach">
+      <label for="peach">복숭아</label>
+
+      <input type="checkbox" name="product" value="kiwi" id="kiwi">
+      <label for="kiwi">키위</label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>포장을 선택하세요</legend>
+      <label><input type="radio" name="gift" value="yes"> 선물포장</label>
+      <label><input type="radio" name="gift" value="no" checked> 선물 포장 안함</label>
+    </fieldset><br>
+
+    <fieldset>
+      <legend>포장할 상품과 수량을 선택하세요</legend>
+      <label for="apple_qty">사과:</label>
+      <input type="number" id="apple_qty" min="0" max="10" value="1"> 개 (최대 10개) <br>
+
+      <label for="pear_qty">배:</label>
+      <input type="number" id="pear_qty" min="0" max="5"> 개 (최대 5개) <br>
+
+      <label for="peach_qty">복숭아:</label>
+      <input type="number" id="peach_qty" min="0" max="15"> 개 (최대 15개) <br>
+
+      <label for="kiwi_qty">키위:</label>
+      <input type="range" id="kiwi_qty" min="0" max="20" step="5"> 개 (최대 20개, 5개 단위로 선택 가능)
+    </fieldset><br>
+
+    <fieldset>
+      <legend>날짜 지정하기</legend>
+      <label for="date">년-월-일:</label>
+      <input type="date" id="date">
+    </fieldset><br>
+
+    <fieldset>
+      <legend>시간 지정하기</legend>
+      <label for="time">--:--:</label>
+      <input type="time" id="time">
+    </fieldset><br>
+
+    <fieldset>
+      <legend>날짜 범위 제한하기</legend>
+      <label for="date_range">년-월-일:</label>
+      <input type="date" id="date_range">
+    </fieldset><br>
+
+    <fieldset>
+      <legend>본인 사진을 첨부하세요</legend>
+      <input type="file">
+    </fieldset><br>
+
+    <fieldset>
+      <legend>배경색을 선택하세요</legend>
+      <input type="color">
+    </fieldset><br>
+
+    <input type="submit" value="제출">
+  </form>
+
+</body>
+</html>
