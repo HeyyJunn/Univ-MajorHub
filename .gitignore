@@ -1,5 +1,6 @@
-Practice-Code-gitignore/*
-!Practice-Code-gitignore/.gitkeep
+# 정확한 상대경로로 지정
+2025-Univ-2nd-Year/Introduction-to-Data-Science/Practice-Code-gitignore/*
+!2025-Univ-2nd-Year/Introduction-to-Data-Science/Practice-Code-gitignore/.gitkeep
 
-Quiz-Code-gitignore/*
-!Quiz-Code-gitignore/.gitkeep
+2025-Univ-2nd-Year/Introduction-to-Data-Science/Quiz-Code-gitignore/*
+!2025-Univ-2nd-Year/Introduction-to-Data-Science/Quiz-Code-gitignore/.gitkeep
