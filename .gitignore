@@ -1,7 +1,5 @@
-# 폴더 안의 모든 파일 무시
 Practice-Code-gitignore/*
-Quiz-Code-gitignore/*
-
-# 폴더 자체는 추적 허용
 !Practice-Code-gitignore/.gitkeep
+
+Quiz-Code-gitignore/*
 !Quiz-Code-gitignore/.gitkeep
