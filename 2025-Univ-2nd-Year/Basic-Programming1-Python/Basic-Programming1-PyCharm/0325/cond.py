@@ -17,3 +17,19 @@ print("# opeartor & operand #")
 # operand 3,4
 a = "hi"
 print(3*a)
+
+
+print('abc'[1:3])
+print('abc'[0:len('abc')])
+print('abc'[1:])
+
+x = 3
+ans = 0
+itersLeft = x
+while itersLeft != 0:
+    ans = ans + x
+    itersLeft -= 1
+
+print(ans)
+
+
