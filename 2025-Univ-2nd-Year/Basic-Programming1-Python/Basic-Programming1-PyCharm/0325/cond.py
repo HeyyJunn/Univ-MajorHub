@@ -19,9 +19,9 @@ a = "hi"
 print(3*a)
 
 
-print('abc'[1:3])
-print('abc'[0:len('abc')])
-print('abc'[1:])
+print('abc'[1:3]) # bc
+print('abc'[0:len('abc')]) #abc
+print('abc'[1:]) #bc
 
 x = 3
 ans = 0
