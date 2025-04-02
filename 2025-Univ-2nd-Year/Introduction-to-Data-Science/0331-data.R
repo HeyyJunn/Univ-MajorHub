@@ -80,3 +80,38 @@ exam_new = left_join(myexam, name, by="class")
 exam_new
 
 ########################################
+
+library(ggplot2)
+str(mpg)
+head(mpg)
+
+mpg = as.data.frame(mpg)
+str(mpg)
+head(mpg)
+
+# 1
+df = mpg %>% select(class,cty)
+df_suv = df %>% filter(class=="suv")
+df_compact = df %>% filter(class == "compact")
+mean(df_suv$cty)
+mean(df_compact$cty)
+
+# 2
+mpg %>% 
+  filter(manufacturer == "audi") %>%
+  arrange(desc(hwy)) %>%
+  head(5)
+
+# 3
+mpg %>%
+  filter(class == "compact") %>%
+  group_by(manufacturer) %>%
+  summarise(num = n()) %>%
+  arrange(desc(num))
+
+# 4
+mpg %>%
+  group_by(manufacturer, drv) %>%
+  summarise(mean_cty = mean(cty)) %>%
+  head(10)
+########################################

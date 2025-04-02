@@ -18,3 +18,17 @@ sum(df$score, na.rm = T)
 
 df$score = ifelse(is.na(df$score), mean(df$score, na.rm = T), df$score)
 df$score
+
+outlier = data.frame(gender=c(1,2,1,3,2,1), score = c(5,4,3,4,2,600))
+outlier
+
+table(outlier$gender)
+table(outlier$score)
+
+outlier$gender = ifelse(outlier$gender == 3, NA, outlier$gender)
+outlier$score = ifelse(outlier$score, NA, outlier$score)
+
+outlier %>%
+  filter(!is.na(gender) & !is.na(score)) %>%
+  group_by(gender) %>%
+  summarise(mean_score = mean(score))

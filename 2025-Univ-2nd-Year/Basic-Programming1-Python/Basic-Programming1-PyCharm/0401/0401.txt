@@ -1,0 +1,7 @@
+exhaustive enumeration
+
+가능성을 구할 때 까지 모두 시도해보는 방식
+-> 비효율적인 방식
+
+exhaust the space of pissibilities
+-> 
