@@ -62,6 +62,7 @@ class(state.x77)  # "matrix"
 # 매트릭스를 데이터프레임으로 변환
 new_state = data.frame(state.x77)
 new_state
+
 str(new_state)
 class(new_state)  # "data.frame"
 

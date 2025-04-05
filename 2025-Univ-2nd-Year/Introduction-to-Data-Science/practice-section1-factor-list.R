@@ -52,6 +52,7 @@ member
 # $address
 # [1] "seoul"
 # $tel
+
 # [1] "01088881111"
 # $ssn
 # [1] 10815
