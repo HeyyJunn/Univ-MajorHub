@@ -1,0 +1,77 @@
+/* 기본 설정 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 헤더 */
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 네비게이션 바 */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  font-weight: bold;
+  color: yellow;
+}
+
+/* 아티클 */
+.articles {
+  padding: 20px;
+  text-align: center;
+}
+
+.articles article {
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+}
+
+/* 박스 모델 영역 */
+.box-model {
+  border: 2px solid #66cc99;
+  background-color: #f9f9f9;
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+}
+
+/* 푸터 */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
