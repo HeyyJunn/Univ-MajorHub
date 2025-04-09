@@ -125,14 +125,76 @@ library("plotrix")
 week = c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat")
 ratio = round(T_sales / sum(T_sales) * 100, 1)
 label = paste(week, "\n", ratio, "%")
-pie3D(T_sales, main = "주간매출동향", col = rainbow(length(T_sales)), 
+pie3D(T_sales, main = "주간매출 동향", col = rainbow(length(T_sales)), 
       cex = 0.8, labels = label)
 legend(-0.8, 1.0, c("Mon", "Tue", "Wed", "Thur", "Fri", "Sat"), 
        cex = 0.8, fill = rainbow(length(T_sales)))
 
 # 추가 그래프
-pie3D(T_sales, main = "주간매출 동향", col = rainbow(length(T_sales)), 
+pie3D(T_sales, main = "aa", col = rainbow(length(T_sales)), 
       cex = 0.8, labels = label, explode = 0.05)
+##################################################
+
+# 상자 모양 차트 
+
+A = c(110, 300, 150, 280, 310)
+B = c(180, 200, 210, 190, 170)
+C = c(210, 150, 260, 210, 70)
+
+boxplot(A, B, C,
+        col = c("yellow", "cyan", "green"),
+        names = c("Baseball", "Soccerball", "Pingpongball"),
+        horizontal = TRUE)
+
+
+data(iris)
+plot(iris$Sepal.Width)
+sepal.stat1 = boxplot(iris$Sepal.Width)
+sepa1.stat1
+
+sepal.stat2 = boxplot(Sepal.width ~ Species, data=iris,
+                      col = c("blue", "green", "red"),
+                      xlab = "Iris Species")
+
+boxplot(Sepal.Width ~ Species, data=iris, notch=T,
+        col = c("blue", "green", "red"),
+        xlab = "iris species",
+        horizontal = TRUE)
+
+##################################################
+
+plot.new()
+plot(-4:4, -4:4, type="n")
+
+points(rnorm(200), rnorm(200), pch="+", col="red")
+
+par(new = T)
+points(rnorm(200), rnorm(200), pch="o", col="cyan")
+
+##################################################
+
+x = c(1,1,1,2,2,2,2,2,2,2,3,3,4,5,6)
+y = c(2,1,4,2,3,2,2,2,2,2,2,1,1,1,1)
+
+zz = data.frame(x,y)
+sunflowerplot(zz)
+
+
+
+
+##################################################
+
+x1 = seq(-3,3,length=50)
+x2 = seq(-4,4,length=60)
+f = function(x1,x2){x1^2 + x2^2+ x1*x2}
+y= outer(x1,x2,FUN=f)
+persp(x1,x2,y)
+
+# 등고선 그래프 contour
+
+##################################################
+
+
 ##################################################
 
 ##################################################

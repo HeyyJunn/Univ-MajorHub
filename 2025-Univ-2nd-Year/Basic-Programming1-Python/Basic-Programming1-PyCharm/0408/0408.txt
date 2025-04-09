@@ -1,0 +1,26 @@
+def functionNmae (formalParameters):
+    functionBody
+
+def max(x,y)
+    if x > y:
+        return x
+    else:
+        return y
+
+user defined function 사용자가 만든 함수
+
+builtin function
+
+built in function <-> user defined function
+
+parameter 를 통해서 lmabda abstraction 이 가능하다
+
+actual paragmer = argument = 인자
+formal parameter= parmeter = 매개변수
+
+binding
+max (3,4) binds x to 3, y to 4
+선언 시 매칭
+
+Decomposition
+Abstraction
