@@ -101,3 +101,4 @@ gmap + geom_point(data = df,
                   size = df$gdp / 100000,
                   alpha = 0.5)
 
+
